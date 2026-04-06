@@ -1,4 +1,4 @@
-# simulation of rotating bodies
+# Pendulums simulation
 
 This repo now includes a small, reproducible Python package `pendulums` (single + double pendulum) with:
 - **SciPy** integration (`solve_ivp`, energy drift monitoring)
