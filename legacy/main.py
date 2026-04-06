@@ -22,3 +22,4 @@ if model_num == 2:
 
 if not (model_num in [1, 2]):
     print('Opps, you\'ve failed to choose the model, rerun programm and look at model\'s numbers carefully')
+

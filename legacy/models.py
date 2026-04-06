@@ -25,3 +25,4 @@ def model_decorator(params):
             return result
         return wrapped
     return decorator
+

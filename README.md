@@ -43,4 +43,4 @@ uv run pendulums --model double --preset chaotic --duration 8 --fps 60 --size 72
 
 ## Notes
 - If `.webm` export fails, your OpenCV build may lack the needed codec; `.mp4` is the default recommendation.
-- Existing legacy demo files (`main.py`, `make_video.py`, etc.) are kept as-is.
+- Legacy demo files were moved into `legacy/` (old matplotlib-based renderer and RK4).

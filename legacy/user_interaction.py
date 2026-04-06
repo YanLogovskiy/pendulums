@@ -34,3 +34,4 @@ def run_video(properties, model_func):
             name=model_func.__name__, omega=w, betta=b))
     else:
         print('Ok, if you do not want to run video now, you can do it later manually. Bye!')
+

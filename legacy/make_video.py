@@ -59,5 +59,6 @@ def create_video(properties, model_func, create_frame_func):
             name=model_func.__name__, omega=w, betta=b)
     if os.path.exists(video_name):
         os.remove(video_name)
-    os.system('ffmpeg -f image2 -pattern_type glob -framerate 25 -i "frames/f_*.png" '
+    os.system('ffmpeg -f image2 -pattern_type glob -framerate 25 -i \"frames/f_*.png\" '
               '-s 1080x1080 {video_name}'.format(video_name=video_name))
+
