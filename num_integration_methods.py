@@ -20,7 +20,7 @@ def rungekut(func, t_0, t_1, x_0):
         # x_{n+1} = x_n + h/6 * (k_1 + 2*k_2 + 2*k_3 + k_4)
 
         # k_1 + 2*k_2
-        temp_1 = np.add(k_1, np.dot(k_1, 2))
+        temp_1 = np.add(k_1, np.dot(k_2, 2))
         # 2*k_3 + k_4
         temp_2 = np.add(np.dot(k_3, 2), k_4)
         # h/6 * (k_1 + 2*k_2 + 2*k_3 + k_4)

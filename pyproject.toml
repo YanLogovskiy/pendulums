@@ -1,0 +1,32 @@
+ [project]
+ name = "pendulums"
+ version = "0.1.0"
+ description = "Single and double pendulum simulation with SciPy integration and OpenCV rendering."
+ readme = "README.md"
+ requires-python = ">=3.10"
+ authors = [{ name = "yan" }]
+ license = { text = "MIT" }
+ dependencies = [
+   "numpy>=1.24",
+   "scipy>=1.10",
+   "opencv-python>=4.8",
+ ]
+ 
+ [project.optional-dependencies]
+ gif = [
+   "imageio>=2.34",
+   "pillow>=10",
+ ]
+ 
+ [project.scripts]
+ pendulums = "pendulums.cli:main"
+ 
+ [build-system]
+ requires = ["hatchling>=1.21"]
+ build-backend = "hatchling.build"
+ 
+ [tool.uv]
+ package = true
+ 
+ [tool.hatch.build.targets.wheel]
+ packages = ["src/pendulums"]
